@@ -35,10 +35,10 @@ const ServicesContainer = () => {
             description: "Assessment of information systems, IT infrastructure, and related controls to ensure data integrity, security, and operational effectiveness."
         },
         {
-            image: "https://i.pinimg.com/236x/5c/bc/8b/5cbc8bf51c06a9cf7832022611ac190f.jpg",
-            title: "Fraud Investigations",
-            description: "Specialized examinations to detect, prevent, and investigate potential fraudulent activities within government and financial institutions."
-        },
+            image: "https://i.pinimg.com/236x/f8/a5/ca/f8a5ca61e7721d73da6a80f226e5aa40.jpg",
+            title: "Project Management",
+            description: "Assessing and identifying potential risks that could affect an organization's goals, processes, or regulatory compliance."       
+         },
         {
             image: "https://i.pinimg.com/736x/f6/ad/02/f6ad0212dd834ed495222472687380b0.jpg",
             title: "Risk Assessments",

@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import { FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaLinkedin, FaTwitter } from 'react-icons/fa6'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -35,7 +36,7 @@ const Footer = () => {
         <div>
         <ul>
             <h3>Navigation</h3>
-            <li>Home</li>
+           <NavLink to={"/project_management"} ><li>Home</li></NavLink>
             <li>About Us</li>
             <li>Blog</li>
             <li>Contact Us</li>

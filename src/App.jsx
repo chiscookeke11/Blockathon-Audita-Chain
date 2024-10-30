@@ -12,6 +12,7 @@ import RequestForm from './pages/requestform/RequestForm';
 import PerformanceAudit from './pages/PerformanceAudit';
 import ComplianceAudit from './pages/ComplianceAudit';
 import AuditIn from './pages/AuditIn';
+import ProjectManagement from './pages/ProjectManagement';
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='/performance_audit' element={<PerformanceAudit/> }/>
         <Route path='/compliance_audit' element={<ComplianceAudit/> }/>
         <Route path='/auditin' element={<AuditIn/> }/>
+        <Route path ='/project_management' element={<ProjectManagement/> }/>
     
       </Routes>
     </div>
