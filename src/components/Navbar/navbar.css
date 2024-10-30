@@ -1,0 +1,57 @@
+
+.nav-link {
+  font-weight: bold; 
+  display: flex;
+  align-items: center; 
+  padding: 0.5rem 1rem; 
+}
+
+.login_btn {
+  font-weight: bold;
+  padding: 0.5rem 1rem; 
+}
+nav{
+    transition: 0.3s ease-in-out !important;
+}
+/* Mobile menu styles */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem; 
+}
+
+.logo{
+    max-width: 150px;
+}
+.login_btn{
+    font-size: 1rem;
+    color: #fff;
+    background:  #68a4a5;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    min-width: 130px;
+    transition: 0.3s ease-in-out;
+    margin: 10px 0;
+    filter: drop-shadow(0 0 3px #000);
+}
+.login_btn:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+  .nav-link{
+    padding: 0.5rem 0.3rem;
+  }
+}

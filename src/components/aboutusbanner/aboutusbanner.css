@@ -1,0 +1,70 @@
+.aboutusbanner{
+    width: 100%;
+    padding: 17% 0px 3% 0 ;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.aboutusbanner div{
+    width: 45%;
+    min-width: 330px;
+    min-height: 280px;
+    border-radius: 6px;
+}
+.aboutusbanner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+.aboutusbanner h1{
+    color:  #68a4a5;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    padding: 2px 0px;
+    border-radius: 20px;
+    border: 1px;
+    margin: 0;
+}
+.aboutusbanner p{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    padding: 10px 0;
+    margin: 5px 0;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .aboutusbanner{
+        padding: 22% 0px;
+        gap: 10px;
+    }
+}
+
+

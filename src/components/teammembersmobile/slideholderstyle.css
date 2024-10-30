@@ -1,0 +1,16 @@
+.slideholder{
+    background-color: #3A4A5A;;
+    width: 30%;
+    margin: 30px auto;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 300px;
+    height: auto;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .slideholder{
+        display: block;
+    }
+}
