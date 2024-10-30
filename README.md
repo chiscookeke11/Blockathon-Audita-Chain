@@ -5,80 +5,12 @@
 ### Overview
 A **Decentralized Auditing Platform** where every government and institution transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible. Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes. 
 
-
-### Key Features
-- **Decentralized Auditing**: Ensures data is immutable and verifiable through smart contracts.
-- **Transparency**: Public audit records can be viewed by anyone to promote accountability.
-- **Privacy**: Sensitive audit data remains secure, with only authorized entities having access.
-- **Scalability**: Starts with a few institutions, with plans to scale to national industries.
-
 ### Use Cases
 - Auditing public institutions.
 - Tracking and verifying government spending.
 - Providing a transparent system for private sector audits.
 
-## Architecture
-
-### Blockchain Platform
-- **Blockchain Used**: Lisk
-- **Smart Contract Framework**: Solidity
-
-### Key Components
-1. **Smart Contracts**:
-    - **Audit Submission Contract**: For institutions to submit reports for auditing.
-    - **Verification Contract**: Enables auditors to verify reports.
-    - **Record Contract**: Stores completed audits in an immutable ledger.
-2. **Auditor Nodes**: Authorized nodes that validate and verify the correctness of audits.
-3. **User Interface (UI)**: 
-    - Built with html, css, javaScript, tailwind,.... .
-    - Wallet integration for transaction signings.
-4. **Storage**:
-   - **On-Chain Data**: Critical audit data stored directly on the blockchain.
-   - **Off-Chain Data**: Large files stored using decentralized storage solutions like IPFS/Filecoin, with hashes linked on-chain.
-
-## Key Features
-
-### User Roles
-- **Auditors**: Authorized individuals or institutions that perform audits.
-- **Institutions**: Public or private organizations submitting their financial or operational data for auditing.
-- **Public Viewers**: Users who can view audit results but cannot alter any information.
-
-### Workflow
-1. **Submission**: Institutions submit audit reports through the web app.
-2. **Audit Assignment**: Reports are assigned to auditors based on predefined rules in smart contracts.
-3. **Audit Execution**: Auditors review and verify the reports.
-4. **Finalization**: Reports are made publicly available after audits are finalized.
-
-### Security
-- **Immutable Records**: Once recorded on the blockchain, audits cannot be altered.
-- **Data Encryption**: Sensitive data is encrypted to ensure privacy.
-- **Permissioned Access**: Only accredited auditors can verify reports and submit results.
-
-## User Guide
-
-### Prerequisites
-- **Blockchain Wallet**: Users need a wallet like MetaMask to interact with the platform.
-- **Tokens**: Some interactions may require a minimal amount of tokens for transaction fees.
-
-### Submitting an Audit (For Institutions)
-1. **Login**: Connect to the platform using your blockchain wallet.
-2. **Submit Report**: Fill in the necessary data and upload relevant documents.
-3. **Await Verification**: Once submitted, an auditor will be assigned to review the report.
-4. **Check Results**: After the audit, view the results in your dashboard.
-
-### Auditing a Report (For Auditors)
-1. **Login**: Connect using your auditor credentials.
-2. **View Assigned Reports**: Access reports assigned under the "My Audits" section.
-3. **Review and Verify**: Verify data and conduct the audit.
-4. **Submit Findings**: Submit the findings to record them on the blockchain.
-
-### Viewing Audit Results (For Public)
-1. **Access Platform**: Open the public audit page.
-2. **Browse Audits**: Use the search functionality to find specific audits.
-3. **View Details**: Click to view audit details and findings.
-
-
-# Key Features of the Decentralized Auditing Platform
+# Key Features
 
 ## 1. Decentralized Auditing Process
 - **Immutability**: All audit records are stored on the blockchain, ensuring that once audits are completed, they cannot be altered or tampered with.
@@ -121,6 +53,50 @@ A **Decentralized Auditing Platform** where every government and institution tra
 ## 10. Audit Tokens (If Applicable)
 - **Tokenized Incentives**: Auditors may earn tokens as rewards for completing audits, which can be used within the platform or traded. Tokens incentivize quality and timely audit work.
 - **Staking Mechanism**: Auditors may stake tokens as a guarantee of good conduct, with penalties for fraudulent or erroneous audits, promoting accountability.
+
+## Architecture
+
+### Blockchain Platform
+- **Blockchain Used**: Lisk
+- **Smart Contract Framework**: Solidity
+
+### Key Components
+1. **Smart Contracts**:
+    - **Audit Submission Contract**: For institutions to submit reports for auditing.
+    - **Verification Contract**: Enables auditors to verify reports.
+    - **Record Contract**: Stores completed audits in an immutable ledger.     
+2. **User Interface (UI)**: 
+    - Built with html, css, javaScript, tailwind,.... .
+    - Wallet integration for transaction signings.
+3. **Storage**:
+   - **On-Chain Data**: Critical audit data stored directly on the blockchain.
+   - **Off-Chain Data**: Large files stored using decentralized storage solutions like IPFS/Filecoin, with hashes linked on-chain.
+
+
+## User Guide
+
+### Prerequisites
+- **Blockchain Wallet**: Users need a wallet like MetaMask to interact with the platform.
+- **Tokens**: Some interactions may require a minimal amount of tokens for transaction fees.
+
+### Submitting an Audit (For Institutions)
+1. **Login**: Connect to the platform using your blockchain wallet.
+2. **Submit Report**: Fill in the necessary data and upload relevant documents.
+3. **Await Verification**: Once submitted, an auditor will be assigned to review the report.
+4. **Check Results**: After the audit, view the results in your dashboard.
+
+### Auditing a Report (For Auditors)
+1. **Login**: Connect using your auditor credentials.
+2. **View Assigned Reports**: Access reports assigned under the "My Audits" section.
+3. **Review and Verify**: Verify data and conduct the audit.
+4. **Submit Findings**: Submit the findings to record them on the blockchain.
+
+### Viewing Audit Results (For Public)
+1. **Access Platform**: Open the public audit page.
+2. **Browse Audits**: Use the search functionality to find specific audits.
+3. **View Details**: Click to view audit details and findings.
+
+
 
 ---
 
