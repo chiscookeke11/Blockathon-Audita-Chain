@@ -3,7 +3,8 @@
 ## Introduction
 
 ### Overview
-The **Decentralized Auditing Platform** provides transparent, secure, and tamper-proof audits for national-level projects and institutions. By leveraging blockchain technology, the platform enables decentralized and automated auditing processes, reducing human errors and the potential for corruption. The system ensures public access to audit trails while maintaining privacy and integrity of sensitive data.
+A **Decentralized Auditing Platform** where every government and institution transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible. Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes. 
+
 
 ### Key Features
 - **Decentralized Auditing**: Ensures data is immutable and verifiable through smart contracts.
