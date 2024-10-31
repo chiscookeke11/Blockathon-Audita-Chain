@@ -1,0 +1,141 @@
+.stats{
+    width: 100%;
+    height: auto;
+    min-width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 5% 10%;
+    margin: 4% 0 4%;
+}
+.stats ul{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    list-style: none;
+    gap: 10%;
+    color: #68a4a5;
+    font-weight: 500;
+    font-size: 1.05;
+}
+.stats ul li{
+    cursor: pointer;
+}
+
+
+
+.grid-stats{
+    width: 100%;
+    min-width: 330px;
+    padding: 4% 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.grid-box{
+    flex-basis: 45%;
+    width: 30%;
+    min-width: 300px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161E29;
+    min-height: 30vh;
+    border-radius: 8px;
+    color: #fff;
+    filter: drop-shadow(0 0 3px #000);
+}
+.grid-box .heading{
+    font-size: 1.4rem; 
+    font-weight: 600;
+    color: #68a4a5;
+}
+.grid-box .figure{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.grid-box .timeframe{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.recent-activity{
+    width: 100%;
+    background-color: #161E29;
+    filter: drop-shadow( 0 0 3px #000);
+    min-height: 10vh;
+    height: auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.recent-activity h1{
+    color: #68a4a5;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 0;
+}
+.recent-activity p{
+    color: #e8e8e8;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.transaction-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.transaction-list li{
+    width: 100%;
+    min-width: 280px;
+    padding: 8px 12px;
+    margin: 1% 0;
+    border-bottom: 3px solid  #3A4A5A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+.transaction-list  .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 8px;
+    max-width: 200px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .stats{
+        margin: 4% 0 10%;
+    }
+}
+
+
+
+
+
+
+
+
+

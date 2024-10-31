@@ -6,4 +6,48 @@
     top: 0;
     left: 0;
     height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 1% 6%;
 }
+.sidenav ul{
+    width: 100%;
+    padding: 10px 5px;
+    list-style: none;
+}
+.sidenav li{
+    padding: 10px 5px;
+    background-color: #161E29;
+    margin: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(0 0 1px #000);
+}
+.sidenav li:active {
+    transform: scale(0.9);
+}
+
+
+
+@media (max-width:768px){
+    .sidenav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+

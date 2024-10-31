@@ -1,5 +1,20 @@
 .header{
     width: 100%;
-    padding: 20px 25px;
+    padding: 20px 6%;
     background-color: #3A4A5A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    font-weight: 500;
+}
+.current-page p{
+    font-size: 1.5rem;
+}
+.wallet-address{
+    background-color: #1E2A38;
+    padding: 10px 16px;
+    border-radius: 16px;
+    filter: drop-shadow(0 0 1px #000);
 }
