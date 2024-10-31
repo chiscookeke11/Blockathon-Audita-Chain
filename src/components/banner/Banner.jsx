@@ -83,6 +83,10 @@ const Banner = () => {
 
       </div>
       <SlideHolder/>
+
+      <hr />
+      <hr />
+      <hr />
     </div>
   );
 };

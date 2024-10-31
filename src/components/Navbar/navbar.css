@@ -12,6 +12,7 @@
 }
 nav{
     transition: 0.3s ease-in-out !important;
+    /* filter: blur(10); */
 }
 /* Mobile menu styles */
 .mobile-menu {
@@ -27,7 +28,7 @@ nav{
 .login_btn{
     font-size: 1rem;
     color: #fff;
-    background:  #68a4a5;
+    background: linear-gradient(288.42deg, #0A2B73 3.11%, #031130 52%, #00A8FF 100.89%) ;
     padding: 10px 15px;
     display: flex;
     align-items: center;

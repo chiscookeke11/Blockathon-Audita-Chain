@@ -16,7 +16,6 @@ const Features = () => {
       </div>
 
       <div className='text' data-aos="fade-left">
-        <h3>Features</h3>
         <h1>Unlocking Audit Confidence</h1>
         <ul>
           <li>AuditaBlock ensures immutable audit records, safeguarding data 

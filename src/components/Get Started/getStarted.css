@@ -7,13 +7,14 @@
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+    background: linear-gradient(90.75deg, #010030 18.4%, #030096 33.21%, #02004A 44.17%, #010030 58.37%, #08058F 76.22%, #010030 93.27%);
 }
 .getstarted h1{
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 50px;
     text-align: left;
-    color:  #68a4a5;
+    color:  #fff;
         width: 100%;
         text-align: center;
 }
@@ -33,7 +34,7 @@
 }
 .getstarted button {
     margin: 5% 0 2%;
-    background-color: #68a4a5;
+    background-color: #7285AF;
     border-radius: 10px;
     padding: 10px 18px;
     outline: none;

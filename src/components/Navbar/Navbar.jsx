@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="bg-[#3A4A5A] fixed top-0 w-full"
+      className="bg-[#010030] fixed top-0 w-full"
       style={{ zIndex: 9999 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">

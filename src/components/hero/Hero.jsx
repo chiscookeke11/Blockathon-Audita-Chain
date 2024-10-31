@@ -31,7 +31,6 @@ const Hero = () => {
         <img src={image.banner_img} alt="Blockchain banner" />
       </div>
 
-      <hr />
     </div>
   );
 };

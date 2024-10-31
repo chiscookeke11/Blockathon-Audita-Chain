@@ -7,10 +7,10 @@
     padding: 50px 10px;
     gap: 5px;
     text-align: center;
-    background: #3A4A5A;
+    background: #010030;
 }
 .banner h1{
-    color: #68a4a5;
+    color: #fff;
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
@@ -69,8 +69,8 @@ min-width: 350px;
     min-height: 320px;
     width: 200px;
     height: 300px;
-    background-color: #1E2A38;
-    color: #ffffff;
+    background-color: #020A1B;
+    color: #1B52C9;
     padding: 20px 10px 50px;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ min-width: 350px;
     gap: 10px;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 3px #000;
+    box-shadow: 1px 1px 10px 3px #1B52C9;
     margin: 0 0 15px;
     opacity: 90%;
 }
@@ -100,14 +100,14 @@ min-width: 350px;
   }
   
 .card-container .card h2, .mobile-card h2{
-    color:  #68a4a5;
+    color:  #fff;
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center
 }
 .card-container .card p, .mobile-card p{ 
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
     display: inline-block;
     padding: 0;
@@ -120,7 +120,12 @@ min-width: 350px;
     object-fit: cover;
     object-position: center;
 }
-
+.banner hr{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    margin: 0;
+}
 
 
 
