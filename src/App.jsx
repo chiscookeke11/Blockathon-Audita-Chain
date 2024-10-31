@@ -13,6 +13,7 @@ import PerformanceAudit from './pages/PerformanceAudit';
 import ComplianceAudit from './pages/ComplianceAudit';
 import AuditIn from './pages/AuditIn';
 import ProjectManagement from './pages/ProjectManagement';
+import AppLayout from './Applayout/AppLayout';
 
 
 
@@ -35,6 +36,10 @@ const App = () => {
         <Route path='/compliance_audit' element={<ComplianceAudit/> }/>
         <Route path='/auditin' element={<AuditIn/> }/>
         <Route path ='/project_management' element={<ProjectManagement/> }/>
+
+
+        <Route path='/applayout' element ={<AppLayout/> }/>
+       
     
       </Routes>
     </div>

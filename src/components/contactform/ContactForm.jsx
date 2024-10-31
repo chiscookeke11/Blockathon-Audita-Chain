@@ -36,7 +36,7 @@ const ContactForm = () => {
   return (
     <div className='form-container'>
       <div className="form-wrapper">
-        <div className="left-side" data-aos="fade-right">
+        <div className="contact-left-side" data-aos="fade-right">
           <h1>Let's Chat</h1>
           <p>Whether you have a question, want to start a project, or simply want to connect.
             <br/><br/>
@@ -44,7 +44,7 @@ const ContactForm = () => {
           </p>
         </div>
 
-        <div className="right-side" data-aos="fade-left">
+        <div className="contact-right-side" data-aos="fade-left">
           <h1>Contact</h1>
           <form onSubmit={onSubmit} data-aos="zoom-in">
             <input type="text" name="name" placeholder='Name' required data-aos="fade-up" data-aos-delay="100" />

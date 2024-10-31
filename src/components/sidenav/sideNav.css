@@ -1,0 +1,9 @@
+.sidenav{
+    width: 23%;
+    background-color: #3A4A5A;
+    border-right: 1px solid #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
