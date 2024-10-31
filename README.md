@@ -5,6 +5,10 @@
 ### Overview
 A **Decentralized Auditing Platform** where every government and institution transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible. Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes. 
 
+### Problem
+
+### Solution
+
 ### Use Cases
 - Auditing public institutions.
 - Tracking and verifying government spending.
