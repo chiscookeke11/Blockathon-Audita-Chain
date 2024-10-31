@@ -38,7 +38,7 @@ const Footer = () => {
             <h3>Navigation</h3>
            <NavLink to={"/project_management"} ><li>Home</li></NavLink>
            <NavLink to={"/applayout"}> <li>About Us</li></NavLink>
-            <li>Blog</li>
+           <NavLink to={"/smartcontractregistry"}> <li>Blog</li></NavLink>
             <li>Contact Us</li>
            </ul>          
         </div>
