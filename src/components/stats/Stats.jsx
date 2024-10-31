@@ -58,17 +58,40 @@ const Stats = () => {
 
             <li>
                 <span className="desc">
-                    Transaction ID <br/>
+                    <header>Transaction ID <br/></header>
                     <small>Date, Time</small>
                 </span>
                 <span className="amount">$0.00</span>
                 </li>
 
 
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li> <span className="desc">
+                    <header>Transaction ID <br/></header>
+                    <small>Date, Time</small>
+                </span>
+                <span className="amount">$0.00</span></li>
+
+            <li> <span className="desc">
+                    <header>Transaction ID <br/></header>
+                    <small>Date, Time</small>
+                </span>
+                <span className="amount">$0.00</span></li>
+
+            <li>
+            <span className="desc">
+                    <header>Transaction ID <br/></header>
+                    <small>Date, Time</small>
+                </span>
+                <span className="amount">$0.00</span>
+            </li>
+
+            <li>
+            <span className="desc">
+                    <header>Transaction ID <br/></header>
+                    <small>Date, Time</small>
+                </span>
+                <span className="amount">$0.00</span>
+            </li>
           </ul>
           
          
@@ -77,8 +100,53 @@ const Stats = () => {
 
       {activeSection === 'alerts' && (
         <div className="grid-stats alerts">
-          <h2>Alerts</h2>
-          <p>This is the alerts section.</p>
+
+<h1>Alerts</h1>
+            <p>Recent notification and alerts</p>
+
+
+          <ul className="transaction-list">
+
+
+
+
+<li>
+    <span className="desc">
+        <header>Alert</header>
+        <small>Date, Time</small>
+    </span>
+    <span className="amount">$0.00</span>
+    </li>
+
+
+<li> <span className="desc">
+        <header>Alert</header>
+        <small>Date, Time</small>
+    </span>
+    <span className="amount">$0.00</span></li>
+
+<li> <span className="desc">
+<header>Alert</header>
+        <small>Date, Time</small>
+    </span>
+    <span className="amount">$0.00</span></li>
+
+<li>
+<span className="desc">
+<header>Alert</header>
+        <small>Date, Time</small>
+    </span>
+    <span className="amount">$0.00</span>
+</li>
+
+<li>
+<span className="desc">
+<header>Alert</header>
+        <small>Date, Time</small>
+    </span>
+    <span className="amount">$0.00</span>
+</li>
+</ul>
 
          
           

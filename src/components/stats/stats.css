@@ -65,7 +65,7 @@
     font-weight: 500;
     font-size: 0.9rem;
 }
-.recent-activity{
+.recent-activity, .alerts{
     width: 100%;
     background-color: #161E29;
     filter: drop-shadow( 0 0 3px #000);
@@ -77,13 +77,13 @@
     align-items: flex-start;
     flex-direction: column;
 }
-.recent-activity h1{
+.recent-activity h1, .alerts h1{
     color: #68a4a5;
     font-size: 1.7rem;
     font-weight: 600;
     line-height: 0;
 }
-.recent-activity p{
+.recent-activity p, .alerts p{
     color: #e8e8e8;
     font-size: 1.1rem;
     font-weight: 400;
@@ -117,7 +117,10 @@
     text-align: center;
     color: #fff;
 }
-
+.desc header{
+    color: #68a4a5;
+    font-size: 1.1rem;
+}
 
 
 
