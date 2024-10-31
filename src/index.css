@@ -2,55 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Outfit", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
 }
-.homepage{
-    background-color: #1E2A38;
-    width: 100%;
-    overflow: hidden;
+.homepage {
+  background-color: #1e2a38;
+  width: 100%;
+  overflow: hidden;
 }
-.service{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #1E2A38;
-}
-
-.sidebar, .button, .side-button:hover{
-background-color: #3a4a5a;
-
+.service {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1e2a38;
 }
 
-.sidebar, .button,  .pages ul li a:hover, .pages ul li a:active{
-    background-color: #68a4a5;
+.sidebar,
+.button,
+.side-button:hover {
+  background-color: #3a4a5a;
 }
 
-.input{
-    border:1px solid #68a4a5;
-}
-.text-color{
-color: #68a4a5;
-
-}
-.sidebar ul li a:hover{
-
-    background-color: #3a4a5a;
+.sidebar,
+.button,
+.pages ul li a:hover,
+.pages ul li a:active {
+  background-color: #68a4a5;
 }
 
-.dashboard-top{
-    background-color: #1E2A38;
+.input {
+  border: 1px solid #68a4a5;
+}
+.text-color {
+  color: #68a4a5;
+}
+.sidebar ul li a:hover {
+  background-color: #3a4a5a;
 }
 
-.dash-box{
-
-    background-color: #3a4a5a;
+.dashboard-top {
+  background-color: #1e2a38;
 }
 
-.button2 a:hover{
-
-    background-color: #68a4a5;
+.dash-box {
+  background-color: #3a4a5a;
 }
 
+.button2 a:hover {
+  background-color: #68a4a5;
+}
