@@ -1,33 +1,19 @@
-import React from 'react'
-import Sidenav from '../components/sidenav/Sidenav'
-import Header from '../components/header/Header'
-import './appLayout.css'
-import { Route, Routes } from 'react-router-dom'
-import DashboardMain from '../pages/Dashboard'
-import Transactions from '../pages/Transactions'
-
+import React from "react";
+import Sidenav from "../components/sidenav/Sidenav";
+import Header from "../components/header/Header";
+import "./appLayout.css";
+import { Outlet, Route, Routes } from "react-router-dom";
 
 const AppLayout = () => {
   return (
-    <div className='applayout'>
-        <Sidenav/>
-        <div className='info-container'>
-            <Header/>
-
-           <Routes>
-
-            <Route path='/dashboardmain' element={<DashboardMain/>} />
-            <Route index element={<Transactions />} />
-            <Route path='/transactions' element={<Transactions/> }/>
-           </Routes>
-           
-
-
-
-
-        </div>
+    <div className="applayout">
+      <Sidenav />
+      <div className="info-container">
+        <Header />
+        <Outlet />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default AppLayout;
