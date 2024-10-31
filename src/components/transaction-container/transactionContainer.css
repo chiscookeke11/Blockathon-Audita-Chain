@@ -1,0 +1,25 @@
+.transaction-container{
+    width: 100%;
+    padding: 30px 40px;
+    margin-bottom: 10%;
+}
+.transaction-container input {
+    width: 100%;
+    min-width: 300px;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #759CBA1A;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 4%;
+}
+
+
+@media (max-width:768px){
+    .transaction-container{
+        margin-bottom: 20%;
+    }
+}
