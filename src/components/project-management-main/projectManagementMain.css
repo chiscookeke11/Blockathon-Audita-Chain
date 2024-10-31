@@ -141,7 +141,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 .form-main .email-address input{
     min-width: 300px;
@@ -159,7 +159,7 @@
     padding: 10px 0;
 }
 .login-details span{
-    flex-basis: 25%;
+    flex-basis: 100%;
     margin: 10px auto;
 }
 .login-details input{

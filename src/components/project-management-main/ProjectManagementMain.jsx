@@ -38,21 +38,7 @@ Learn more about Auditablock dapp</p>
 
                     <div className="form-main">
 
-                        <div className="name">
-
-                            <span className="first-name">
-                                <label for="firstName">First name</label>
-                                <input type="text" id='firstName' required />
-                            </span>
-
-                            
-                            <span className="last-name">
-                                <label for="lastName">Last name</label>
-                                <input type="text" id='lastName' required />
-                            </span>
-
-
-                           </div>
+                        
 
                            <div className="email-address">
                             <label for="email" >Email Address</label>
@@ -66,10 +52,7 @@ Learn more about Auditablock dapp</p>
                                 <input type="username" id='username' required/>
                             </span>
 
-                            <span className="PhoneNumber">
-                                <label for="PhoneNumber">Phone Number</label>
-                                <input type="tel" id='PhoneNumber' required/>
-                            </span>
+                         
 
                             <span className="Password">
                                 <label for="Password">Password</label>
