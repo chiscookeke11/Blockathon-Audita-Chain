@@ -24,10 +24,13 @@ background-color: #3a4a5a;
 
 }
 
-.sidebar, .button, .pages ul li a:hover, .pages ul li a:active{
+.sidebar, .button,  .pages ul li a:hover, .pages ul li a:active{
     background-color: #68a4a5;
 }
 
+.input{
+    border:1px solid #68a4a5;
+}
 .text-color{
 color: #68a4a5;
 
@@ -45,3 +48,9 @@ color: #68a4a5;
 
     background-color: #3a4a5a;
 }
+
+.button2 a:hover{
+
+    background-color: #68a4a5;
+}
+
