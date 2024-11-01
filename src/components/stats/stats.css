@@ -67,7 +67,10 @@
 }
 .recent-activity, .alerts{
     width: 100%;
-    background-color: #fff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     filter: drop-shadow( 0 0 3px #000);
     min-height: 10vh;
     height: auto;
@@ -78,13 +81,13 @@
     flex-direction: column;
 }
 .recent-activity h1, .alerts h1{
-    color: #171717;
+    color: #fff;
     font-size: 1.7rem;
     font-weight: 600;
     line-height: 0;
 }
 .recent-activity p, .alerts p{
-    color: #171717;
+    color: #7285AF;
     font-size: 1.1rem;
     font-weight: 400;
 }
@@ -115,7 +118,7 @@
     max-width: 200px;
     height: 100%;
     text-align: center;
-    color: #333;
+    color: #7285AF;
 }
 .desc header{
     color: #171717;

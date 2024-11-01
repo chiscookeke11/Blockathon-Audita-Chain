@@ -1,9 +1,11 @@
 import React from 'react'
 import './requestForm.css'
+import Navbar from '../../components/Navbar/Navbar'
 
 const RequestForm = () => {
   return (
     <div className='requestform'>
+      <Navbar/>
         <h1>Request an Audit</h1>
 
         <form action="">

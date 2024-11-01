@@ -8,6 +8,7 @@
     padding: 10% 10px 5%;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 }
 .servicecontainer .title{
     font-size: 3rem;

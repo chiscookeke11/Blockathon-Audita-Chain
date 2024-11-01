@@ -76,9 +76,7 @@ const It_Audit = () => {
           </ul>
         </div>
 
-        <div className="FAQ">
-          <h1>FAQ</h1>
-        </div>
+        
       </div>
     </div>
   )

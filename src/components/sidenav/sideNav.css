@@ -1,9 +1,12 @@
 .sidenav {
-  background-color: #3a4a5a;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(50px); 
+  -webkit-backdrop-filter: blur(50px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-right: 1px solid #000;
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   text-align: center;

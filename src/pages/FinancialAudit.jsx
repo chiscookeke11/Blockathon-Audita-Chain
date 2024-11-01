@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 
 const FinancialAudit = () => {
   return (
-    <div style={{backgroundColor: "#1e2a38 " }}>
+    <div>
       <Navbar/>
       <FinancialAuditBanner/>
 

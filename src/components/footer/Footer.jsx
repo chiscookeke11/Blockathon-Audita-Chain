@@ -20,13 +20,13 @@ const Footer = () => {
           <a href="#">
             <FaInstagram />{" "}
           </a>
-          <a href="#">
+          <a href="https://x.com/auditachain?s=09" target="_blank" >
             <FaTwitter />{" "}
           </a>
           <a href="#">
             <FaLinkedin />{" "}
           </a>
-          <a href="#">
+          <a href="https://youtube.com/@auditachain?si=3aXZ-6gWuXd685Dg" target="_blank">
             <FaYoutube />{" "}
           </a>
         </div>
@@ -45,18 +45,18 @@ const Footer = () => {
       <div>
         <ul>
           <h3>Navigation</h3>
-          <NavLink to={"/project_management"}>
-            <li>Home</li>
-          </NavLink>
-          <NavLink to={"/app"}>
-            {" "}
-            <li>About Us</li>
-          </NavLink>
+          
+          <NavLink to={"/"} >  <li>Home</li></NavLink>
+      
+         
+           <NavLink to={"/aboutus"}><li>About Us</li></NavLink> 
+        
           <NavLink to={"/smartcontractregistry"}>
             {" "}
             <li>Blog</li>
           </NavLink>
-          <li>Contact Us</li>
+
+         <NavLink to={"/contact"}> <li>Contact Us</li></NavLink>
         </ul>
       </div>
 

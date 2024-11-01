@@ -13,7 +13,7 @@ const FinancialAuditBanner = () => {
     <div className='f-a-banner'    >
         <div className="top">
             <div className="top-text">
-        <h1>Financial Audits on the Blockchain</h1>
+        <h1>Financial Audits on the <br/>Blockchain</h1>
         <h2>Service Overview</h2>
         <p>Our Financial Audits service leverages blockchain technology to provide unparalleled transparency, security, and efficiency in examining financial statements of government entities and financial institutions.</p>
        
@@ -96,9 +96,6 @@ const FinancialAuditBanner = () => {
         </div>
 
 
-        <div className="FAQ">
-        <h1>FAQ</h1>
-        </div>
 
 
 
