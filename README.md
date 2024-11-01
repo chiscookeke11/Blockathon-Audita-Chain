@@ -4,21 +4,28 @@
 
 ### Overview
 
-A **Decentralized Auditing Platform** where every government and institution transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible. Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes.
+A **Decentralized Auditing Platform** designed to thoroughly assess smart contracts for vulnerabilities, perform security checks, and detect potential errors. This platform ensures a transparent, trustless environment where users can independently verify the integrity of smart contracts, enhancing security and reducing the risk of exploitation or bugs in decentralized applications.
+
+This platform also is where every government and institutions transactions, budget and public expenditure can be tracked on transparent blockchain ledger. 
+
+Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes.
 
 ### Problem
-Governments and organizations, especially in developing countries, have witnessed project failures in their project implementation. Some of the causes established is lack of accountability, poor contractor practice, corruption and bad system of governance. The resultant consequences can lead to slow economic growth, lack of employment, bribery and corruption among others.
+Many web3 projects, organizations, especially in developing countries, have witnessed project failures in their project implementation. Some of the causes established is lack of technical know-how, poor contractor practice, corruption, lack of accountability and bad system of governance for government. The resultant consequences can lead to vulnerability, slow economic growth, lack of employment.
+
 Many industries, particularly the public sector, struggle with ensuring that audits are open to scrutiny, leading to mistrust in governance and financial management. subject to that effect, centralized auditing systems can be subject to manipulation, fraud, or tampering, creating doubts about the integrity of audit results.
 
 
 ### Solution
-A decentralized auditing platform where every government and institution’s transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible.
+A decentralized auditing platform for web3 project and where every government and institution’s transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger.
+
 Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes. 
 
 
 ### Use Cases
 
 - Auditing public institutions.
+- Security check on smart contracts
 - Tracking and verifying government spending.
 - Providing a transparent system for private sector audits.
 
@@ -53,7 +60,7 @@ Pitch deck:
 ## 5. Data Privacy and Security
 
 - **Data Encryption**: Sensitive audit data is encrypted, ensuring only authorized users have access to full audit details while protecting privacy.
-- **Decentralized Storage**: Large files are stored off-chain using decentralized solutions like IPFS/Filecoin, while cryptographic hashes are stored on-chain for verification.
+- **Decentralized Storage**: Large files are stored off-chain using decentralized solution as IPFS while cryptographic hashes are stored on-chain for verification.
 - **Immutable Records**: All records are immutable once stored on the blockchain, guaranteeing long-term integrity and transparency.
 
 ## 6. Scalability and Flexibility
@@ -68,7 +75,7 @@ Pitch deck:
 
 ## 8. Governance and Compliance
 
-- **Regulatory Compliance**: Smart contracts can be configured to ensure compliance with local or international regulations, providing a legally compliant audit process.
+- **Regulatory Compliance**: Smart contracts can be configured to ensure compliance with local or international regulations, and cyber security, providing a legally compliant audit process.
 - **Governance Mechanism**: Stakeholders (auditors, institutions, regulators) can vote on platform rule changes, audit standards, and platform improvements through decentralized governance.
 
 ## 9. User-Friendly Interface and Wallet Integration
@@ -76,7 +83,7 @@ Pitch deck:
 - **Intuitive Dashboard**: The platform provides a user-friendly interface for submitting reports, tracking audit progress, and viewing final audit results.
 - **Blockchain Wallet Integration**: Users interact with the platform through blockchain wallets like MetaMask, ensuring secure transactions and identity verification.
 
-## 10. Audit Tokens (If Applicable)
+## 10. Audit Tokens 
 
 - **Tokenized Incentives**: Auditors may earn tokens as rewards for completing audits, which can be used within the platform or traded. Tokens incentivize quality and timely audit work.
 - **Staking Mechanism**: Auditors may stake tokens as a guarantee of good conduct, with penalties for fraudulent or erroneous audits, promoting accountability.
@@ -85,7 +92,7 @@ Pitch deck:
 
 ### Blockchain Platform
 
-- **Blockchain Used**: Lisk
+- **Blockchain Used**: Lisk.
 - **Smart Contract Framework**: Solidity
 
 ### Key Components
