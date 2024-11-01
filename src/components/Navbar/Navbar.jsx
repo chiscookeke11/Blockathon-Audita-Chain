@@ -59,9 +59,9 @@ const Navbar = () => {
             >
               CONTACT
             </NavLink>
-            <NavLink to={"/app"}>
-              <button className="login_btn nav-link">CONNECT WALLET</button>
-            </NavLink>
+            {/* <NavLink to={"/project_management"}>
+              <button className="login_btn nav-link">GET STARTED</button>
+            </NavLink> */}
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -122,9 +122,9 @@ const Navbar = () => {
             >
               CONTACT
             </NavLink>
-            <NavLink to={"/app"}>
+            <NavLink to={"/project_management"}>
               <button className="login_btn" onClick={handleLinkClick}>
-                CONNECT WALLET
+                GET STARTED
               </button>
             </NavLink>
           </div>

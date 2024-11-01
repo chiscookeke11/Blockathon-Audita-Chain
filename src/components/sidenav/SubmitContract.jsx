@@ -1,6 +1,10 @@
 import React, { useState, useCallback } from "react";
 import { FaFlag } from "react-icons/fa";
 import "../../index.css"
+import { TransactionButton } from "thirdweb/react";
+import { getContract, prepareContractCall } from "thirdweb";
+import { liskSepolia } from "../../liskSepolia";
+import { client } from "../../client";
 
 const SubmitContract = () => {
   const [address, setAddress] = useState("");
@@ -9,6 +13,11 @@ const SubmitContract = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const contract = getContract({
+    client,
+    address: "0x221723C7E47738A741B0Be08FFD240E0D2f2e483",
+    chain: liskSepolia,
+  });
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -108,15 +117,47 @@ const SubmitContract = () => {
             rows={10}
             value={contractData?.source_code || ""}
           />
-          <button
+
+<TransactionButton 
+          unstyled
+ className="group relative w-full flex justify-center py-3 px-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+          onClick={() => console.log("sending transaction")}
+          transaction={() => {
+            // Create a transaction object without params for the symbol() function
+            const tx = prepareContractCall({
+              contract,
+              method: "function name() public view returns (string memory)",
+            });
+            return tx;
+          }}
+          onTransactionSent={(result) => {
+            console.log("Transaction submitted", result.transactionHash);
+          }}
+          onTransactionConfirmed={(receipt) => {
+            console.log("Transaction confirmed", receipt.transactionHash);
+          }}
+          onError={(error) => {
+            console.error("Transaction error", error);
+          }}
+        >
+          Audit Contract
+        </TransactionButton>
+          {/* <button
             type="submit"
             className="group relative w-full flex justify-center py-3 px-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
             disabled={isLoading}>
             {isLoading ? "Loading..." : "Audit Contract"}
-          </button>
+          </button> */}
 
-          <button className="flag-btn"><FaFlag/> Query</button>
+
+
+
+         
         </form>
+      
+
+        <button className="flag-btn"><FaFlag /> Query</button>
+
 
         {auditResults && auditResults.length > 0 && (
           <div className="mt-8 bg-slate-900 shadow overflow-hidden sm:rounded-lg">
@@ -129,11 +170,10 @@ const SubmitContract = () => {
               {auditResults.map((result, index) => (
                 <li key={index} className="px-4 py-4">
                   <div
-                    className={`flex items-center ${
-                      result.type === "warning"
-                        ? "text-yellow-600"
-                        : "text-blue-600"
-                    }`}>
+                    className={`flex items-center ${result.type === "warning"
+                      ? "text-yellow-600"
+                      : "text-blue-600"
+                      }`}>
                     <span className="text-sm">{result.message}</span>
                   </div>
                 </li>
