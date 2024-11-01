@@ -8,7 +8,7 @@ import ComplianceAuditBanner from '../components/financial_audit_banner/Complian
 const ComplianceAudit = () => {
   return (
     <div>
-         <div style={{backgroundColor: "#1e2a38"}} >
+         <div >
     <Navbar />
     <ComplianceAuditBanner/>
 

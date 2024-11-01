@@ -1,6 +1,6 @@
 .f-a-banner{
     width: 100%;
-    padding: 13% 3% 5%;
+    padding: 10% 3% 5%;
     text-align: initial;
 }
 .top{
@@ -9,7 +9,7 @@
     margin-bottom: 7%;
 }
 .f-a-banner h1{
-    color: #fff;
+    color: #7285AF;
     font-weight: 600;
     font-size: 3rem;
     margin: 20px 0 20px;
@@ -32,7 +32,7 @@
     font-size: 2.1rem;
 }
 .f-a-banner p{
-    color: #68a4a5;
+    color: #fff;
     width: 50%;
     font-size: 1.3rem;
     font-weight: 500;
@@ -41,7 +41,7 @@
     min-width: 330px;
 }
 .f-a-banner button{
-    background-color: #68a4a5;
+    background-color: #7285AF;
     border-radius: 10px;
     padding: 10px 18px;
     outline: none;
@@ -85,7 +85,10 @@
 .keyfeatures div{
     width: 400px;
     min-width: 300px;
-    background-color: #3a4a5a;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 300px;
     padding: 20px 15px;
     border-radius: 6px;
@@ -94,12 +97,12 @@
     text-align: center;
 }
 .keyfeatures div h1{
-    color: #68a4a5;
+    color: #fff;
     font-size: 1.8rem;
     margin: 10px 0;
 }
 .keyfeatures p{
-    color: #fff;
+    color: #7285AF;
     font-size: 1.2rem;
     text-shadow: none;
     min-width: 300px;
@@ -116,10 +119,10 @@
 .integration p{
     width: 95%;
     margin-bottom: 20px;
-    color: #68a4a5;
+    color: #fff;
 }
 .integration ul {
-    color: #68a4a5;
+    color: #fff;
     list-style: disc;
     padding: 5px 20px;
     font-size: 1.2rem;
@@ -149,21 +152,14 @@
     padding: 30px 0;
     gap: 10px;
     color: #fff;
-    background-color: #3a4a5a;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
 }
 .flow-map .icon{
     font-size: 4rem;
-}
-.FAQ{
-    width: 100%;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    margin: 5% 0 1%;
 }
 
 

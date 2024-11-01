@@ -4,7 +4,7 @@ import PerformanceAuditBanner from '../components/financial_audit_banner/Perform
 
 const PerformanceAudit = () => {
   return (
-    <div style={{backgroundColor: "#1e2a38"}} >
+    <div>
     <Navbar />
     <PerformanceAuditBanner />
 

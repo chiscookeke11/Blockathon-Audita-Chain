@@ -5,7 +5,7 @@ import It_Audit from '../components/financial_audit_banner/It_Audit';
 const AuditIn = () => {
   return (
     <div>
-    <div style={{backgroundColor: "#1e2a38"}} >
+    <div>
 
       <Navbar/>
       <It_Audit/>
