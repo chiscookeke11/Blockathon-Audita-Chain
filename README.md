@@ -90,12 +90,11 @@ Integrating smart contracts to automatically enforce accountability when funds a
    - **Verification Contract**: Enables auditors to verify reports.
    - **Record Contract**: Stores completed audits in an immutable ledger.
 2. **User Interface (UI)**:
-   - Built with html, css, javaScript, tailwind,.... .
+   - Built with react, css, tailwind.
    - Wallet integration for transaction signings.
 3. **Storage**:
    - **On-Chain Data**: Critical audit data stored directly on the blockchain.
-   - **Off-Chain Data**: Large files stored using decentralized storage solutions like IPFS/Filecoin, with hashes linked on-chain.
-
+   
 ## User Guide
 
 ### Prerequisites
