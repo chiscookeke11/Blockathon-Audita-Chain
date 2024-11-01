@@ -63,3 +63,20 @@ body{
 
   background-color: #e8e8e8;
 }
+.token-box{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(50px); 
+  -webkit-backdrop-filter: blur(50px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  width: 30%;
+  margin: 15% auto;
+  padding: 3% 2%;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  color: #7285AF;
+  letter-spacing: 0.8px;
+}
+.token-box div{
+  margin: 10px 0;
+}

@@ -2,6 +2,7 @@ import { useActiveAccount, useReadContract } from "thirdweb/react";
 import { liskSepolia } from "../../liskSepolia";
 import { client } from "../../client";
 import { getContract } from "thirdweb";
+import '../../index.css'
 
 import { prepareEvent } from "thirdweb";
 import { useContractEvents } from "thirdweb/react";
@@ -55,7 +56,7 @@ export default function Token() {
   });
   console.log(event)
   return (
-    <div className="text-white">
+    <div className=" token-box">
       <div>Total Supply: {totalSupplyLoading ? "0.000" : totalSupply}</div>
       <div>Token Name: {nameLoading ? "..." : name}</div>
       <div>Token Symbol: {symbolLoading ? "..." : symbol}</div>
