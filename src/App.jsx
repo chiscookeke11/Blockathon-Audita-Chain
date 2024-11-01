@@ -14,10 +14,12 @@ import AppLayout from "./Applayout/AppLayout";
 import SmartContractRegistry from "./pages/SmartContractRegistry";
 import DashboardMain from "./pages/Dashboard";
 import Transactions from "./pages/Transactions";
+import ScrollToTop from "./scroll.js";
 
 const App = () => {
   return (
     <div>
+      <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -29,10 +31,7 @@ const App = () => {
         <Route path="/compliance_audit" element={<ComplianceAudit />} />
         <Route path="/auditin" element={<AuditIn />} />
         <Route path="/project_management" element={<ProjectManagement />} />
-        <Route
-          path="/smartcontractregistry"
-          element={<SmartContractRegistry />}
-        />
+        <Route path="/smartcontractregistry" element={<SmartContractRegistry />} />
 
         <Route path="/app" element={<AppLayout />}>
           <Route index element={<Navigate replace to="dashboard" />} />

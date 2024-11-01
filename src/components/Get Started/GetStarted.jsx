@@ -5,7 +5,7 @@ import './getStarted.css';
 
 const GetStarted = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 500 });
   }, []);
 
   return (

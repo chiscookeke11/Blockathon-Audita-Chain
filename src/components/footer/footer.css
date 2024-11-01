@@ -1,11 +1,15 @@
 .footer{
-    background-color: #161E29;
+    /* background: url("../../assets/Rect Light.svg"); */
+    background-image: url("../../assets/Shiny Overlay.svg");
     color: #fff;
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .footer div{
     padding: 15px 10px;
@@ -33,7 +37,7 @@
     width: 1.8rem;
 }
 .footer h3, .footer h1{
-    color:  #68a4a5;
+    color:  #7285AF;
     font-size: 1.1rem;
     font-weight: 400;
 }

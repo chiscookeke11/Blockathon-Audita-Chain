@@ -6,7 +6,7 @@ import './servicesContainer.css';
 
 const ServicesContainer = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        AOS.init({ duration: 500 });
     }, []);
 
     const services = [

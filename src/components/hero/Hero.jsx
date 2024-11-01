@@ -6,7 +6,7 @@ import { image } from '../images';
 
 const Hero = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 500 });
   }, []);
 
   return (
@@ -31,7 +31,6 @@ const Hero = () => {
         <img src={image.banner_img} alt="Blockchain banner" />
       </div>
 
-      <hr />
     </div>
   );
 };

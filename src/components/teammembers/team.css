@@ -7,8 +7,8 @@
 
 .team-section h1{
 	text-align: center;
-	color:  #68a4a5;
-    font-size: 2rem;
+	color:  #fff;
+    font-size: 2.2rem;
     font-weight: 500;
     padding: 2px 0px;
     border-radius: 20px;
@@ -19,7 +19,7 @@
 
 .team-card-container{
 	width: 70% !important;
-	margin: 50px auto;
+	margin: 40px auto;
 	display: flex !important;
 	justify-content: center;
 	align-items: center;

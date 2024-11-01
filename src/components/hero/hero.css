@@ -7,7 +7,10 @@
     padding: 0px 20px;
     flex-wrap: wrap;
     overflow: hidden;
-    background-color: #1E2A38;
+    background-image: url("../../assets/Shiny Overlay.svg");
+    background-position: center;
+    background-size: cover;
+
 }
 .Hero div{
     max-width: 50vw;
@@ -28,14 +31,15 @@
     display: inline-block;
     margin: 0;
     text-shadow: 0 0 3px #000;
+    color: #7285AF;
 }
 .Hero .text h2{
     font-size: 1.8rem;
     font-weight: 500;
     text-align: left;
     display: inline-block;
-    padding: 2px 0px;
-    border-radius: 20px;
+    padding: 8px 10px;
+    border-radius: 5px;
     border: 1px;
     margin: 0;
 }
@@ -47,7 +51,7 @@
     text-align: left;
     padding: 10px 0;
     margin: 5px 0;
-    color: #68a4a5;
+    color: #D1CFCF;
     text-shadow: 0 0 3px #000;
 }
 .Hero span{
@@ -56,12 +60,12 @@
     gap: 10px;
 }
 .Hero button {
-    background-color: #68a4a5;
+    background-color: #fff;
     border-radius: 10px;
     padding: 10px 18px;
     outline: none;
     border: none;
-    color: #fff;
+    color: #0A2B73;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 600;
@@ -77,8 +81,9 @@
     /* box-shadow: 0 0 3px #000; */
 }
 .Hero button:nth-of-type(2){
-    background-color: #3A4A5A;
+    background-color: #7285AF;
     filter: none;
+    color: #fff;
 }
 .Hero button:active{
     transform: scale(0.9);
@@ -97,7 +102,10 @@
     position: absolute;
     top: 55%;
     left: 50%;
-    background: #3A4A5A;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 450px;
     width: 450px;
     transform: translate(-50%, -50%);
@@ -109,7 +117,10 @@
     position: absolute;
     bottom: 0;
     right: 13%;
-    background: #3A4A5A;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 20%;
     width: 15%;
     border-radius: 50% !important;
@@ -121,12 +132,7 @@
     display: block;
     z-index: 99;
 }
-.Hero hr{
-    position: absolute;
-    bottom: 0;
-    width: 60%;
-    border: 1px solid #68a4a5;
-}
+
 
 
 
