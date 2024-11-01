@@ -85,7 +85,7 @@ const SubmitContract = () => {
   }, []);
 
   return (
-    <div className="bg-slate-900 flex items-center justify-center p-8">
+    <div className="bg-slate-900 flex items-center justify-center p-8" style={{ overflow: "auto", height: "100vh" }}>
       <div className="w-full space-y-8">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-900">
           Contract Auditor
