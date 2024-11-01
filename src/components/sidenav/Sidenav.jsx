@@ -16,7 +16,7 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
         onClick={() => setIsOpen(false)}
         className="hidden max-md:flex text-white absolute top-3 right-3"
       />
-      <h1>Logo</h1>
+      <img src="/logo.png" alt=""  className="w-32"/>
       <ul>
         <NavLink to="dashboard" onClick={handleItemClick}>
           <li>Dashboard</li>
