@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [result, setResult] = useState("");
 
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: 'ease-in-out' }); 
+    AOS.init({ duration: 500, easing: 'ease-in-out' }); 
   }, []);
 
   const onSubmit = async (event) => {
