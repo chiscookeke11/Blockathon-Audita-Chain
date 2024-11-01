@@ -1,5 +1,4 @@
 import React from 'react'
-import TransactionContainer from '../transaction-container/TransactionContainer'
 
 export default function Main_dashboard() {
   return (
@@ -161,8 +160,7 @@ export default function Main_dashboard() {
 
 
     </div>
-    
-    <TransactionContainer />
+
     
     
         </div>
