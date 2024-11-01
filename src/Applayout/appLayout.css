@@ -1,22 +1,20 @@
-.applayout{
-    background-color: grey;
+.applayout {
+  background-color: grey;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #1e2a38;
+}
+.info-container {
+  width: 77%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .info-container {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    background-color: #1E2A38;
-}
-.info-container{
-    width: 77%;
-    position: fixed;
-    top: 0;
-    right: 0;
-   
-}
-
-
-@media (max-width:768px){
-    .info-container{
-        width: 100%;
-    }
+  }
 }
