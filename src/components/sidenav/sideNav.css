@@ -1,7 +1,7 @@
 .sidenav {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-  backdrop-filter: blur(50px); 
-  -webkit-backdrop-filter: blur(50px); 
+  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); */
+  /* backdrop-filter: blur(50px);  */
+  /* -webkit-backdrop-filter: blur(50px);  */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-right: 1px solid #000;
   height: 100vh;
@@ -19,11 +19,11 @@
 }
 .sidenav li {
   padding: 10px 5px;
-  background-color: #161e29;
+  background-color: rgb(15 23 42);
   margin: 10px 0;
   border-radius: 6px;
   cursor: pointer;
-  color: #fff;
+  color: #d7d5d5;
   font-size: 1.3rem;
   font-weight: 600;
   transition: 0.3s ease-in-out;

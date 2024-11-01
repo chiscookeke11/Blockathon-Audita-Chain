@@ -7,7 +7,7 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
   };
   return (
     <div
-      className={`sidenav !bg-slate-90 block lg:w-[23%] max-md:fixed max-md:left-0 max-md:top-0 max-md:w-[80%] max-md:h-full max-md:transition-transform max-md:duration-300 transform z-50  ${
+      className={`sidenav !bg-slate-950 block lg:w-[23%] max-md:fixed max-md:left-0 max-md:top-0 max-md:w-[80%] max-md:h-full max-md:transition-transform max-md:duration-300 transform z-50  ${
         isOpen ? "max-md:translate-x-0" : "max-md:-translate-x-full"
       } z-50`}>
       <FiX
@@ -27,7 +27,9 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
           <li>Submit Contract</li>
         </NavLink>
         <li>Audit History</li>
-        <li>Settings</li>
+        <NavLink to="token">
+          <li>Token</li>
+        </NavLink>
       </ul>
     </div>
   );

@@ -85,10 +85,10 @@ const SubmitContract = () => {
   }, []);
 
   return (
-    <div className="bg-slate-900 flex items-center justify-center p-8">
-      <div className="w-full space-y-8">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-900">
-          Contract Auditor
+    <div className=" flex items-center justify-center p-8 w-full overflow-scroll h-[100vh] pb-24">
+      <div className="">
+        <h2 className="mt-12 text-white text-center text-3xl font-extrabold ">
+          Smart Contract Auditor
         </h2>
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
           <input
@@ -115,9 +115,9 @@ const SubmitContract = () => {
         </form>
 
         {auditResults && auditResults.length > 0 && (
-          <div className="mt-8 bg-neutral-800 shadow overflow-hidden sm:rounded-lg">
+          <div className="mt-8 bg-slate-900 shadow overflow-hidden sm:rounded-lg">
             <div className="px-4 py-5 sm:px-6">
-              <h3 className="text-lg font-medium text-slate-900">
+              <h3 className="text-lg font-medium text-gray-300">
                 Audit Results
               </h3>
             </div>

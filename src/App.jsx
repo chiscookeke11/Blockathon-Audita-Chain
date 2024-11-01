@@ -16,6 +16,7 @@ import DashboardMain from "./pages/Dashboard";
 import Transactions from "./pages/Transactions";
 import ScrollToTop from "./scroll.js";
 import SubmitContract from "./components/sidenav/SubmitContract.jsx";
+import Token from "./components/sidenav/Token.jsx";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="dashboard" element={<DashboardMain />} />
           <Route path="transactions" element={<Transactions />} />
           <Route path="submitcontract" element={<SubmitContract />} />
+          <Route path="token" element={<Token />} />
         </Route>
       </Routes>
     </div>
