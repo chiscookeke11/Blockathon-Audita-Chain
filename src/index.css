@@ -80,3 +80,16 @@ body{
 .token-box div{
   margin: 10px 0;
 }
+.flag-btn{
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}

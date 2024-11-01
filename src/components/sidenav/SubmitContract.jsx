@@ -1,4 +1,6 @@
 import React, { useState, useCallback } from "react";
+import { FaFlag } from "react-icons/fa";
+import "../../index.css"
 
 const SubmitContract = () => {
   const [address, setAddress] = useState("");
@@ -112,6 +114,8 @@ const SubmitContract = () => {
             disabled={isLoading}>
             {isLoading ? "Loading..." : "Audit Contract"}
           </button>
+
+          <button className="flag-btn"><FaFlag/> Query</button>
         </form>
 
         {auditResults && auditResults.length > 0 && (
