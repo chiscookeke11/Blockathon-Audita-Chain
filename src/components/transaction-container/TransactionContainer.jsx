@@ -11,12 +11,7 @@ const TransactionContainer = () => {
     { date: "10/30/24", transactionId: "TXN789", from: "Sender C", to: "Receiver C", amount: "300", department: "Finance" },
     
     { date: "10/30/24", transactionId: "TXN123", from: "Sender A", to: "Receiver A", amount: "100", department: "Sales" },
-    { date: "10/30/24", transactionId: "TXN456", from: "Sender B", to: "Receiver B", amount: "200", department: "Marketing" },
-    { date: "10/30/24", transactionId: "TXN789", from: "Sender C", to: "Receiver C", amount: "300", department: "Finance" },
     
-    { date: "10/30/24", transactionId: "TXN123", from: "Sender A", to: "Receiver A", amount: "100", department: "Sales" },
-    { date: "10/30/24", transactionId: "TXN456", from: "Sender B", to: "Receiver B", amount: "200", department: "Marketing" },
-    { date: "10/30/24", transactionId: "TXN789", from: "Sender C", to: "Receiver C", amount: "300", department: "Finance" },
     
   ];
 
