@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./sideNav.css";
 import { NavLink } from "react-router-dom";
 import { FiX } from "react-icons/fi";
@@ -15,7 +14,7 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
       <FiX
         size={30}
         onClick={() => setIsOpen(false)}
-        className="hidden max-md:flex absolute top-3 right-3"
+        className="hidden max-md:flex text-white absolute top-3 right-3"
       />
       <h1>Logo</h1>
       <ul>

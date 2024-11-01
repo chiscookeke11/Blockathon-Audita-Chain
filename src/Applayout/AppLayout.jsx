@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Sidenav from "../components/sidenav/Sidenav";
 import Header from "../components/header/Header";
 import "./appLayout.css";
@@ -14,6 +14,14 @@ const AppLayout = () => {
         <Header setIsOpen={setIsOpen} />
         <Outlet />
       </div>
+      {isOpen ? (
+        <div
+          className="max-md:fixed inset-0 bg-black bg-opacity-50 z-30"
+          onClick={() => setIsOpen(false)}
+        ></div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
