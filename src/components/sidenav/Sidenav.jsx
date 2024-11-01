@@ -7,16 +7,15 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
   };
   return (
     <div
-      className={`sidenav block lg:w-[23%] max-md:fixed max-md:left-0 max-md:top-0 max-md:w-[80%] max-md:h-full max-md:transition-transform max-md:duration-300 transform z-50 ${
+      className={`sidenav !bg-slate-90 block lg:w-[23%] max-md:fixed max-md:left-0 max-md:top-0 max-md:w-[80%] max-md:h-full max-md:transition-transform max-md:duration-300 transform z-50  ${
         isOpen ? "max-md:translate-x-0" : "max-md:-translate-x-full"
-      } z-50`}
-    >
+      } z-50`}>
       <FiX
         size={30}
         onClick={() => setIsOpen(false)}
         className="hidden max-md:flex text-white absolute top-3 right-3"
       />
-      <img src="/logo.png" alt=""  className="w-32"/>
+      <img src="/logo.png" alt="" className="w-32" />
       <ul>
         <NavLink to="dashboard" onClick={handleItemClick}>
           <li>Dashboard</li>
@@ -24,7 +23,10 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
         <NavLink to="transactions" onClick={handleItemClick}>
           <li>Transaction</li>
         </NavLink>
-        <li>Contacts</li>
+        <NavLink to="submitcontract">
+          <li>Submit Contract</li>
+        </NavLink>
+        <li>Audit History</li>
         <li>Settings</li>
       </ul>
     </div>

@@ -15,11 +15,12 @@ import SmartContractRegistry from "./pages/SmartContractRegistry";
 import DashboardMain from "./pages/Dashboard";
 import Transactions from "./pages/Transactions";
 import ScrollToTop from "./scroll.js";
+import SubmitContract from "./components/sidenav/SubmitContract.jsx";
 
 const App = () => {
   return (
     <div>
-      <ScrollToTop /> 
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -31,12 +32,16 @@ const App = () => {
         <Route path="/compliance_audit" element={<ComplianceAudit />} />
         <Route path="/auditin" element={<AuditIn />} />
         <Route path="/project_management" element={<ProjectManagement />} />
-        <Route path="/smartcontractregistry" element={<SmartContractRegistry />} />
+        <Route
+          path="/smartcontractregistry"
+          element={<SmartContractRegistry />}
+        />
 
         <Route path="/app" element={<AppLayout />}>
           <Route index element={<Navigate replace to="dashboard" />} />
           <Route path="dashboard" element={<DashboardMain />} />
           <Route path="transactions" element={<Transactions />} />
+          <Route path="submitcontract" element={<SubmitContract />} />
         </Route>
       </Routes>
     </div>
