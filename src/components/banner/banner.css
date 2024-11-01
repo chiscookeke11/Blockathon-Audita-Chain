@@ -7,10 +7,14 @@
     padding: 50px 10px;
     gap: 5px;
     text-align: center;
-    background: #010030;
+    /* background: linear-gradient(rgba(10, 18, 44, 1), rgba(20, 48, 84, 1)); */
+/* 
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
 }
 .banner h1{
-    color: #fff;
+    color: #7285AF;
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
@@ -23,6 +27,7 @@
     min-width: auto;
     padding: 0px 20px;
     text-shadow: 0 0 03px #000;
+    color: #fff;
 }
 
 
@@ -69,8 +74,8 @@ min-width: 350px;
     min-height: 320px;
     width: 200px;
     height: 300px;
-    background-color: #020A1B;
-    color: #1B52C9;
+    transition: 0.3s ease-in-out !important;
+    background: #020A1B;
     padding: 20px 10px 50px;
     display: flex;
     flex-direction: column;
@@ -78,7 +83,7 @@ min-width: 350px;
     gap: 10px;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 3px #1B52C9;
+    box-shadow: 1px 1px 10px 3px #000;
     margin: 0 0 15px;
     opacity: 90%;
 }
@@ -100,7 +105,7 @@ min-width: 350px;
   }
   
 .card-container .card h2, .mobile-card h2{
-    color:  #fff;
+    color:  #7285AF;
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center
@@ -113,18 +118,13 @@ min-width: 350px;
     padding: 0;
     margin: 0;
     text-shadow: none;
+    color: #fff;
 }
 .card-container .card img, .mobile-card img{
     width: 90px;
     height: 90px;
     object-fit: cover;
     object-position: center;
-}
-.banner hr{
-    width: 100%;
-    height: 100px;
-    background-color: red;
-    margin: 0;
 }
 
 

@@ -8,7 +8,7 @@
   font-weight: 600;
   line-height: 50px;
   text-align: left;
-  color:  #1B52C9;
+  color:  #7285AF;
       width: 100%;
       text-align: center;
 }
@@ -69,7 +69,7 @@
 .splide__slide {
   display: flex;
   align-items: center;
-  background:  #7285AF;
+  background: #020A1B;
   padding: 3rem 1.875rem;
   border-radius: 1rem;
   gap: 1rem;
@@ -113,13 +113,13 @@
 .splide__arrow--prev {
   top: 50%;
   left: -3.5rem;
-  background-color:  #1B52C9;
+  background-color: #7285AF;
 }
 
 .splide__arrow--next {
   top: 50%;
   right: -3.5rem;
-  background-color: #1B52C9;
+  background-color: #7285AF;
 }
 
 .splide__pagination__page {

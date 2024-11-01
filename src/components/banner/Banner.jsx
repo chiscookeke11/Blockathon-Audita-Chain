@@ -7,7 +7,7 @@ import SlideHolder from '../teammembersmobile/SlideHolder';
 
 const Banner = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 500, once: true });
   }, []);
 
   return (
@@ -84,9 +84,7 @@ const Banner = () => {
       </div>
       <SlideHolder/>
 
-      <hr />
-      <hr />
-      <hr />
+    
     </div>
   );
 };

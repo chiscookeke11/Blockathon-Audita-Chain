@@ -16,7 +16,7 @@ import  logo from '../assets/mainlogo.png'
 import name_img from '../assets/person-circle.svg'
 import email_img from '../assets/person-fill.svg'
 import password_img from '../assets/key-fill.svg'
-
+import bgimg2 from '../assets/756f211e21916c09d38c06c42ec96b3a 3.png'
 export const image = {
     banner_img,
     feature_img,
@@ -36,4 +36,5 @@ export const image = {
     name_img,
     email_img,
     password_img,
+    bgimg2,
 }

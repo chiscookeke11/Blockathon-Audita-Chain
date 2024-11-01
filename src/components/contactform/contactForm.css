@@ -2,11 +2,10 @@
     width: 100%;
     min-height: 100vh;
     height: auto;
-    padding: 20% 10px 5%;
+    padding: 10% 10px 5%;
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: #1E2A38;
     overflow: hidden;
 }
 .form-wrapper {
@@ -35,7 +34,7 @@
 }
 
 .form-wrapper div:nth-of-type(1) {
-    background-color: #68a4a5;
+    background:#1E3A5E;
     color: #fff;
     text-align: center;
     font-weight: 600;
@@ -82,7 +81,7 @@
     border-radius: 5px;
 }
 .form-wrapper button{
-    background-color: #68a4a5;
+    background-color: rgba(30, 58, 94, 1);
     border-radius: 10px;
     padding: 10px 18px;
     outline: none;

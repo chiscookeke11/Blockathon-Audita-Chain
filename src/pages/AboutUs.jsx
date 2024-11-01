@@ -10,7 +10,7 @@ import Navbar from '../components/Navbar/Navbar'
 
 const AboutUs = () => {
   return (
-    <div style={{ backgroundColor: "#1E2A38", overflow: "hidden" }}>
+    <div style={{ overflow: "hidden" }}>
       <Navbar/>
       <AboutUsBanner/>
       <Facts/>

@@ -2,21 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", serif;
 }
+body{
+  background: url("./assets/Rect Light22.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .homepage {
-  background-color: #010030;
   width: 100%;
   overflow: hidden;
 }
 .service {
   width: 100%;
   min-height: 100vh;
-  background-color: #1e2a38;
 }
 
 .sidebar,

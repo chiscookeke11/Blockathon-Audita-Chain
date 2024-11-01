@@ -1,5 +1,5 @@
 .features{
-    background:  linear-gradient(90deg, rgba(2, 10, 27, 0.5) 0%, rgba(2, 10, 27, 0.5) 100%), url("https://github.com/chiscookeke11/Test-pagea/blob/main/Rect%20Light.png?raw=true");
+    background:  linear-gradient(90deg, rgba(2, 10, 27, 0.5) 0%, rgba(2, 10, 27, 0.5) 100%), url("https://github.com/chiscookeke11/Test-pagea/blob/main/stock-market-finance-account-report-260nw-261176156%201.png?raw=true");
     background-size: cover;
     background-position: center;
     width: 90%;
@@ -41,7 +41,7 @@
     font-weight: 600;
     line-height: 50px;
     text-align: left;
-    color:  #fff;
+    color:  #7285AF;
 }
 .features .text ul {
     color: #ffffff;
