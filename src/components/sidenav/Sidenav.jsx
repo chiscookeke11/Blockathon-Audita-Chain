@@ -15,7 +15,7 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
         onClick={() => setIsOpen(false)}
         className="hidden max-md:flex text-white absolute top-3 right-3"
       />
-      <img src="/logo.png" alt="" className="w-32" />
+      <img src="https://github.com/Elite-tch/template/blob/main/OMO%20LOGO.png?raw=true" alt="" className="w-48" />
       <ul>
         <NavLink to="dashboard" onClick={handleItemClick}>
           <li>Dashboard</li>

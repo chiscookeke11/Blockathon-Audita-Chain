@@ -20,7 +20,7 @@ const Team = () => {
       id: 1,
       name: 'Onuigbo Edwin Kelechi',
       description: 'Project Manager',
-      image: 'https://github.com/chiscookeke11/Test-pagea/blob/main/Kce.jpg?raw=true',
+      image: 'https://github.com/chiscookeke11/Test-pagea/blob/main/kce_jnr_2.jpg?raw=true',
       social: {
         github: 'https://github.com/kce-jnr',
         twitter: 'https://x.com/Kce_jnr?t=XWz8RJnVAa7eo8ZGFVGVQw&s=09',

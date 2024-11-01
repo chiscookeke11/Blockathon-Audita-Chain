@@ -11,7 +11,7 @@
   font-family: "Outfit", serif;
 }
 body{
-  background: url("./assets/Rect Light22.svg");
+  background: url("https://github.com/chiscookeke11/Test-pagea/blob/main/Rect%20Light22.png?raw=true");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body{
 .button2 a:hover {
   background-color: #68a4a5;
 }
-.user{
+.applayout .user{
 
   background-color: #e8e8e8;
 }

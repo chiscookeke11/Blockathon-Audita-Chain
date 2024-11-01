@@ -6,11 +6,12 @@
   border-right: 1px solid #000;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+/*   justify-content: space-evenly; */
+  gap: 2%;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 5% 1% 6%;
+  padding: 2% 1% 6%;
 }
 .sidenav ul {
   width: 100%;

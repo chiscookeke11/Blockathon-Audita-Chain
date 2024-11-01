@@ -51,10 +51,10 @@ const Footer = () => {
          
            <NavLink to={"/aboutus"}><li>About Us</li></NavLink> 
         
-          <NavLink to={"/smartcontractregistry"}>
-            {" "}
+          
+ 
             <li>Blog</li>
-          </NavLink>
+    
 
          <NavLink to={"/contact"}> <li>Contact Us</li></NavLink>
         </ul>
