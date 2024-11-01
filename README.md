@@ -7,8 +7,14 @@
 A **Decentralized Auditing Platform** where every government and institution transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible. Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes.
 
 ### Problem
+Governments and organizations, especially in developing countries, have witnessed project failures in their project implementation. Some of the causes established is lack of accountability, poor contractor practice, corruption and bad system of governance. The resultant consequences can lead to slow economic growth, lack of employment, bribery and corruption among others.
+Many industries, particularly the public sector, struggle with ensuring that audits are open to scrutiny, leading to mistrust in governance and financial management. subject to that effect, centralized auditing systems can be subject to manipulation, fraud, or tampering, creating doubts about the integrity of audit results.
+
 
 ### Solution
+A decentralized auditing platform where every government and institution’s transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger. This would reduce opportunities for fraud and corruption as everything is publicly visible.
+Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes. 
+
 
 ### Use Cases
 
