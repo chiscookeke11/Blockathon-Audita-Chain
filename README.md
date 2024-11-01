@@ -22,6 +22,11 @@ Integrating smart contracts to automatically enforce accountability when funds a
 - Tracking and verifying government spending.
 - Providing a transparent system for private sector audits.
 
+## Demo
+Dapp:
+Pitch deck:
+
+
 # Key Features
 
 ## 1. Decentralized Auditing Process
