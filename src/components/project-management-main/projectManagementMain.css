@@ -1,5 +1,4 @@
 .ProjectManagementMain{
-    background-color: #1E2A38;;
     min-height: 100vh;
     padding: 10% 4% 5%;
     display: flex;
@@ -49,7 +48,10 @@
     width: 60%;
 }
 .ProjectManagementMain .right-side{
-    background-color: #3A4A5A;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     padding: 10px 20px;
 }
@@ -64,7 +66,7 @@
     color: #FFFFFF;
 }
 .ProjectManagementMain .left-side p span{
-    color:  #68a4a5;
+    color:  #7285AF;
 }
 .right-side .heading{
     width: 100%;
@@ -91,7 +93,7 @@
     flex-direction: column;
     padding: 10px 5px;
     min-width: 350px;
-    color: #68a4a5;
+    color: #7285AF;
     font-weight: 500;
 }
 .form-main{
@@ -188,7 +190,7 @@
     padding: 8px;
 }
 .right-side button{
-    background-color: #1E2A38;
+    background-color: #7285AF;
     color: #FFFFFF;
     font-size: 1.6;
     font-weight: 400;
