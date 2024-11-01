@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './hero.css';
 import { image } from '../images';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   useEffect(() => {
@@ -17,12 +18,16 @@ const Hero = () => {
         <h2>Decentralized Auditing System</h2>
         <p>A blockchain-based auditing system ensuring transparency, security, and trust with tamper-proof records and automated processes.</p>
       <span className="button-contain">
-      <button>
+
+      <NavLink to={"/project_management"}><button>
            Get Started
-        </button>  
-        <button>
+        </button>  </NavLink>
+
+        <NavLink to={"/aboutus"}> <button>
           Learn More
         </button>
+        </NavLink>
+
       </span>
       </div>
 
