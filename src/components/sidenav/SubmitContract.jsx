@@ -96,7 +96,7 @@ const SubmitContract = () => {
   }, []);
 
   return (
-    <div className=" flex items-center justify-center p-8 w-full overflow-scroll h-[100vh] pb-24">
+    <div className=" flex items-center justify-center p-8 w-full  md:min-w-[800px]overflow-scroll h-[100vh] pb-24">
       <div className="">
         <h2 className="mt-12 text-white text-center text-3xl font-extrabold ">
           Smart Contract Auditor
@@ -112,36 +112,36 @@ const SubmitContract = () => {
           {error && <div className="text-red-600">{error}</div>}
           <textarea
             readOnly
-            className="rounded-md shadow-sm w-full px-3 py-2 border border-slate-300 placeholder-slate-500 bg-slate-800 text-white"
-            placeholder="Contract source code will be displayed here"
+            className="rounded-md shadow-sm w-full px-3 py-2 border border-slate-300 md:min-w-[800px] placeholder-slate-500 bg-slate-800 text-white"
+            placeholder="Contract source code will be displayed here "
             rows={10}
             value={contractData?.source_code || ""}
           />
 
-<TransactionButton 
-          unstyled
- className="group relative w-full flex justify-center py-3 px-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-          onClick={() => console.log("sending transaction")}
-          transaction={() => {
-            // Create a transaction object without params for the symbol() function
-            const tx = prepareContractCall({
-              contract,
-              method: "function name() public view returns (string memory)",
-            });
-            return tx;
-          }}
-          onTransactionSent={(result) => {
-            console.log("Transaction submitted", result.transactionHash);
-          }}
-          onTransactionConfirmed={(receipt) => {
-            console.log("Transaction confirmed", receipt.transactionHash);
-          }}
-          onError={(error) => {
-            console.error("Transaction error", error);
-          }}
-        >
-          Audit Contract
-        </TransactionButton>
+          <TransactionButton
+            unstyled
+            className="group relative w-full flex justify-center py-3 px-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+            onClick={() => console.log("sending transaction")}
+            transaction={() => {
+              // Create a transaction object without params for the symbol() function
+              const tx = prepareContractCall({
+                contract,
+                method: "function name() public view returns (string memory)",
+              });
+              return tx;
+            }}
+            onTransactionSent={(result) => {
+              console.log("Transaction submitted", result.transactionHash);
+            }}
+            onTransactionConfirmed={(receipt) => {
+              console.log("Transaction confirmed", receipt.transactionHash);
+            }}
+            onError={(error) => {
+              console.error("Transaction error", error);
+            }}
+          >
+            Audit Contract
+          </TransactionButton>
           {/* <button
             type="submit"
             className="group relative w-full flex justify-center py-3 px-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
@@ -152,9 +152,9 @@ const SubmitContract = () => {
 
 
 
-         
+
         </form>
-      
+
 
         <button className="flag-btn"><FaFlag /> Query</button>
 
