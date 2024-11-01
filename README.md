@@ -30,7 +30,7 @@ Integrating smart contracts to automatically enforce accountability when funds a
 - Providing a transparent system for private sector audits.
 
 ## Demo
-- Dapp: https://youtu.be/CUzUGoltt0U?si=Rq-diXXfohNdbhA7
+- Dapp: https://youtu.be/ZNcWPNbEXvU?si=t-RWJm2BkpGMEUIY
   
 - Pitch deck: https://www.canva.com/design/DAGU8q9BWDA/3Mp1PviWfTKEeOcbR1WcEg/edit?utm_content=DAGU8q9BWDA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
