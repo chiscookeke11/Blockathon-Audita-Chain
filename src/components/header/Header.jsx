@@ -1,22 +1,20 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./header.css";
 import { liskSepolia } from "../../liskSepolia";
 import { client } from "../../client";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useActiveAccount, useWalletBalance } from "thirdweb/react";
-import { useState, useEffect } from "react";
-import { ConnectButton, useDisconnect, useActiveWallet } from "thirdweb/react";
 import { createWallet } from "thirdweb/wallets";
+
+import { ConnectButton } from "thirdweb/react";
 import { LogoutButton } from "./Logout";
 
 const Header = ({ setIsOpen }) => {
-  const [address, setAddress] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
   const [walletAddress, setWalletAddress] = useState("");
   const account = useActiveAccount();
+  const navigate = useNavigate();
   const { data: balance, isLoading: loadAcc } = useWalletBalance({
     client,
     chain: liskSepolia,
@@ -27,8 +25,11 @@ const Header = ({ setIsOpen }) => {
     if (account?.address) {
       console.log("Connected wallet address:", account.address);
       setWalletAddress(account.address);
+    } else {
+      navigate("/project_management");
     }
-  }, [account]);
+  }, [account, navigate]);
+
   return (
     <div className="w-full py-5 px-[6%] flex justify-between text-white items-center font-bold !bg-slate-950">
       <GiHamburgerMenu
@@ -64,7 +65,7 @@ const Header = ({ setIsOpen }) => {
             <div className="text-white px-4 py-2 bg-gray-700 rounded-lg">
               {`${account.address.slice(0, 6)}...${account.address.slice(-4)}`}
             </div>
-            <LogoutButton/>
+            <LogoutButton />
           </div>
         )}
       </span>

@@ -67,7 +67,7 @@ body{
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(50px); 
   -webkit-backdrop-filter: blur(50px); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px #00000033;
   min-width: 300px;
   width: 30%;
   margin: 15% auto;
@@ -81,7 +81,6 @@ body{
   margin: 10px 0;
 }
 .flag-btn{
-  background-color: red;
   width: 100%;
   display: flex;
   justify-content: center;

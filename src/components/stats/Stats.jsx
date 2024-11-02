@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChartBar, FaBell, FaSearch, FaWallet } from "react-icons/fa";
 
 const Stats = () => {
   const [activeTab, setActiveTab] = useState("overview");
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    const userData = JSON.parse(localStorage.getItem("user"));
+    if (userData && userData.username) {
+      setUsername(userData.username); 
+    }
+  }, []);
 
   const TabButton = ({ id, label }) => (
     <button
@@ -29,7 +37,9 @@ const Stats = () => {
 
   return (
     <div className="min-h-screen text-white p-8">
-      <h1 className="text-3xl font-bold mb-8">Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-8">
+        {username ? `${username}'s Dashboard` : "Dashboard"}
+      </h1>
 
       <div className="mb-6 flex space-x-2">
         <TabButton id="overview" label="Overview" />

@@ -9,6 +9,8 @@ export const LogoutButton = () => {
       if (wallet) {
         await wallet.disconnect();
         console.log("Successfully disconnected");
+        localStorage.clear();
+        console.log("Local storage cleared");
       }
     } catch (error) {
       console.error("Error disconnecting:", error);
@@ -20,6 +22,7 @@ export const LogoutButton = () => {
       onClick={handleDisconnect}
       className="flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-all duration-200 ease-in-out">
       <FaSignOutAlt size={20} />
+      <span>Logout</span>
     </button>
   );
 };
