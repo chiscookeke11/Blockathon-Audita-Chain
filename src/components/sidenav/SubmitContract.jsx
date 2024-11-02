@@ -217,7 +217,7 @@ const SubmitContract = () => {
   };
 
   return (
-    <div className="text-white py-8 overflow-y-scroll h-[100vh]">
+    <div className="text-white py-8 overflow-y-scroll h-[100vh] pb-10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">
           Smart Contract Audit
