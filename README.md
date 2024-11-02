@@ -19,13 +19,13 @@ Integrating smart contracts to automatically enforce accountability when funds a
 
 ____________________________
 ### Problem
-Many web3 projects, organizations have witnessed project failures in their project implementation. Some of the causes established is lack of technical know-how, poor contractor practice, corruption, lack of accountability and bad system of governance for government. The resultant consequences can lead to vulnerability, slow economic growth, lack of employment.
+Many web3 projects, organizations have witnessed project failures in their project implementation. Some of the causes established is lack of technical know-how, poor contractor practice. The resultant consequences can lead to vulnerability, security breach and errors.
 
 Many industries, particularly the public sector, struggle with ensuring that audits are open to scrutiny, leading to mistrust in governance and financial management. subject to that effect, centralized auditing systems can be subject to manipulation, fraud, or tampering, creating doubts about the integrity of audit results.
 
 
 ### Solution
-A decentralized auditing platform for web3 project and where every government and institution’s transaction, budget, and public expenditure can be tracked on a transparent blockchain ledger.
+A decentralized auditing platform for web3 project and where every individual, bulders, institution’s can be tracked, scrutinize on a transparent blockchain ledger.
 
 Integrating smart contracts to automatically enforce accountability when funds are transferred, ensuring they are use used for their intended purposes. 
 
@@ -34,7 +34,7 @@ Integrating smart contracts to automatically enforce accountability when funds a
 
 - Auditing public institutions.
 - Security check on smart contracts
-- Tracking and verifying government spending.
+- Tracking and verifying organization spending.
 - Providing a transparent system for private sector audits.
 
 ## Demo
