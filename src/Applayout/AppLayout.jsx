@@ -8,7 +8,7 @@ const AppLayout = () => {
   const [isOpen, setIsOpen] = useState();
 
   return (
-    <div className="applayout">
+    <div className="applayout ">
       <Sidenav isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="info-container">
         <Header setIsOpen={setIsOpen} />

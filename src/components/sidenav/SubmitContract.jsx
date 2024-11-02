@@ -18,6 +18,10 @@ const SubmitContract = () => {
   const [auditResults, setAuditResults] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [showResults, setShowResults] = useState(false);
+  const [pendingResults, setPendingResults] = useState(null);
+  const [showQueryModal, setShowQueryModal] = useState(false);
+
 
   const contract = getContract({
     client,
@@ -25,15 +29,17 @@ const SubmitContract = () => {
     chain: liskSepolia,
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const performAudit = useCallback(async () => {
+    console.log("Starting audit process...");
     setIsLoading(true);
     setError(null);
     setContractData(null);
-    setAuditResults(null);
+    setPendingResults(null);
+    setShowResults(false);
 
-    if (address) {
-      try {
+    try {
+      if (address) {
+        console.log("Fetching contract data for address:", address);
         const response = await fetch(
           `https://sepolia-blockscout.lisk.com/api/v2/smart-contracts/${address}`
         );
@@ -42,23 +48,44 @@ const SubmitContract = () => {
         }
         const data = await response.json();
         setContractData(data);
+        console.log("Contract data fetched:", data);
         const results = auditContract(data.source_code);
-        setAuditResults(results);
-      } catch (err) {
-        setError(err.message);
+        console.log("Audit completed with results:", results);
+        setPendingResults(results);
+      } else if (sourceCode.trim()) {
+        console.log("Auditing provided source code");
+        setContractData({ source_code: sourceCode });
+        const results = auditContract(sourceCode);
+        console.log("Audit completed with results:", results);
+        setPendingResults(results);
+      } else {
+        throw new Error("Please provide either a contract address or source code");
       }
-    } else if (sourceCode.trim()) {
-      // If no address but source code is provided, audit the direct input
-      setContractData({ source_code: sourceCode });
-      const results = auditContract(sourceCode);
-      setAuditResults(results);
-    } else {
-      setError("Please provide either a contract address or source code");
+    } catch (err) {
+      console.error("Error during audit:", err);
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+      console.log("Audit process completed, waiting for transaction confirmation");
     }
-    setIsLoading(false);
+  }, [address, sourceCode]);
+
+  const handleTransactionSuccess = () => {
+    console.log("Transaction confirmed!");
+    console.log("Pending results:", pendingResults);
+    if (pendingResults) {
+      console.log("Setting audit results and showing results");
+      setAuditResults(pendingResults);
+      setShowResults(true);
+    } else {
+      console.log("No pending results found after transaction confirmation");
+      setAuditResults(pendingResults);
+      setShowResults(true);
+    }
   };
 
   const auditContract = useCallback((sourceCode) => {
+    console.log("Starting contract audit analysis");
     const results = [];
     const severity = {
       HIGH: "high",
@@ -187,6 +214,29 @@ const SubmitContract = () => {
       });
     }
 
+    // Transfer value checks
+    if (sourceCode.includes("transfer(") || sourceCode.includes("send(")) {
+      results.push({
+        type: "warning",
+        severity: severity.MEDIUM,
+        message: "Usage of transfer() or send() detected.",
+        recommendation:
+          "Consider using call() with value instead of transfer() or send() due to gas limitations",
+      });
+    }
+
+    // Solidity version check
+    if (!sourceCode.includes("pragma solidity")) {
+      results.push({
+        type: "warning",
+        severity: severity.MEDIUM,
+        message: "No Solidity version pragma found.",
+        recommendation:
+          "Specify exact compiler version using pragma solidity ^0.8.0",
+      });
+    }
+
+    console.log("Audit analysis completed with results:", results);
     return results;
   }, []);
 
@@ -224,7 +274,7 @@ const SubmitContract = () => {
         </h2>
 
         <div className="max-w-4xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="space-y-6">
             <div>
               <label className="block text-sm font-medium mb-2">
                 Contract Address (Optional)
@@ -254,23 +304,65 @@ const SubmitContract = () => {
               <TransactionButton
                 unstyled
                 className="flex-1 py-3 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors"
-                onClick={() => console.log("sending transaction")}
+                onClick={() => {
+                  console.log("Transaction button clicked");
+                  performAudit();
+                }}
+                onTransactionConfirmed={handleTransactionSuccess}
                 transaction={() => {
+                  console.log("Preparing transaction");
                   const tx = prepareContractCall({
                     contract,
-                    method:
-                      "function name() public view returns (string memory)",
+                    method: "function name() public view returns (string memory)",
                   });
+                  console.log("Transaction prepared:", tx);
                   return tx;
                 }}>
                 Analyze Contract
               </TransactionButton>
 
-              <button className="px-6 py-3 rounded-lg bg-red-600 hover:bg-red-500 transition-colors">
-                <FaFlag className="inline-block mr-2" /> Query
-              </button>
+
+              <>
+                <button
+                  className="px-6 py-3 rounded-lg bg-red-600 hover:bg-red-500 transition-colors"
+                  onClick={() => setShowQueryModal(true)}
+                >
+                  <FaFlag className="inline-block mr-2" /> Query
+                </button>
+
+                {showQueryModal && (
+                  <div className="fixed inset-0 z-50 flex items-center justify-center">
+                    {/* Backdrop */}
+                    <div
+                      className="absolute inset-0 bg-black/50"
+                      onClick={() => setShowQueryModal(false)}
+                    />
+
+                    {/* Modal */}
+                    <div className="relative z-50 w-full max-w-md bg-gray-800 rounded-lg p-6 border border-gray-700">
+                      <div className="mb-4">
+                        <h3 className="text-xl font-semibold text-white mb-2">
+                          Manual Smart Contract Audit
+                        </h3>
+                        <p className="text-gray-400">
+                          Not satisfied with the automatic auditing? Let our smart contract devs do it manually for you.
+                        </p>
+                      </div>
+
+                      <div className="flex justify-end mt-6">
+                        <button
+                          className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors"
+                          onClick={() => setShowQueryModal(false)}
+                        >
+                          Lets Go
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </>
             </div>
-          </form>
+          </div>
 
           {error && (
             <div className="mt-4 p-4 bg-red-900/50 border border-red-700 rounded-lg">
@@ -278,7 +370,7 @@ const SubmitContract = () => {
             </div>
           )}
 
-          {auditResults && auditResults.length > 0 && (
+          {showResults && auditResults && auditResults.length > 0 && (
             <div className="mt-8 bg-gray-800 rounded-lg overflow-hidden">
               <div className="p-4 bg-gray-700">
                 <h3 className="text-xl font-semibold">
