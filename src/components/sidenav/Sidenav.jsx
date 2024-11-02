@@ -25,11 +25,11 @@ const Sidenav = ({ isOpen, setIsOpen }) => {
         <NavLink to="transactions" onClick={handleItemClick}>
           <li>Transaction</li>
         </NavLink>
-        <NavLink to="submitcontract">
+        <NavLink to="submitcontract" onClick={handleItemClick}>
           <li>Submit Contract</li>
         </NavLink>
         <li>Audit History</li>
-        <NavLink to="token">
+        <NavLink to="token" onClick={handleItemClick}>
           <li>Token</li>
         </NavLink>
       </ul>

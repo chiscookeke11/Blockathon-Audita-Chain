@@ -38,7 +38,7 @@ const Header = ({ setIsOpen }) => {
         onClick={() => setIsOpen(true)}
       />
       <span className="current-page">
-        <p>Dashboard</p>
+        {/* <p>Dashboard</p> */}
       </span>
       <span>
         {!account ? (

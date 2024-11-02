@@ -32,7 +32,7 @@ const Navbar = () => {
       className=" fixed top-0 w-full"
       style={{ zIndex: 9999 }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-3">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <img src={image.logo} alt="Logo" className="logo" />
