@@ -162,4 +162,4 @@ This platform’s core features offer a transparent, secure, and scalable soluti
 
 **Q3**: Can anyone become an auditor?
 
-- **A**: Auditors are pre-approved by a governance committee or follow national standards.
+- **A**: Any experienced blockchain developer can become an Auditor.
