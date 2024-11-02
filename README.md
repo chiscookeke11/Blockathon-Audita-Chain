@@ -17,6 +17,7 @@ Integrating smart contracts to automatically enforce accountability when funds a
 - **Johnbosco Izuchukwu:** Frontend Dev
 - **Stephanie Ani:** UI/UX Designer 
 
+____________________________
 ### Problem
 Many web3 projects, organizations, especially in developing countries, have witnessed project failures in their project implementation. Some of the causes established is lack of technical know-how, poor contractor practice, corruption, lack of accountability and bad system of governance for government. The resultant consequences can lead to vulnerability, slow economic growth, lack of employment.
 
