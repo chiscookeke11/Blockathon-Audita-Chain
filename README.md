@@ -148,7 +148,7 @@ Integrating smart contracts to automatically enforce accountability when funds a
 This platform’s core features offer a transparent, secure, and scalable solution for auditing institutions across industries, ensuring integrity, accountability, and compliance.
 
 ## Future Work
-- EDUCATION SYSTEM FOR CERTIFICATION AND TRACK RECORD OF ACADEMIC PERFORMANCE.
+- AI Integrated audit.
 
 ## FAQ
 
